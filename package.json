@@ -1,0 +1,19 @@
+{
+  "name": "group_to_do",
+  "version": "1.0.0",
+  "description": "* Kurtis Garcia * Joshua Garner * Sean MacEachern * John Manack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "express-es6-template-engine": "^2.2.3",
+    "express-session": "^1.17.1",
+    "pg-promise": "^10.9.2"
+  }
+}

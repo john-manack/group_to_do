@@ -1,10 +1,17 @@
 {
   "name": "group_to_do",
   "version": "1.0.0",
-  "description": "* Kurtis Garcia * Joshua Garner * Sean MacEachern * John Manack",
-  "main": "index.js",
+  "description": "ToDo List backend project",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "db:create": "createdb to_do_db",
+    "db:destroy": "dropdb to_do_db",
+    "db:init": "psql -f schema.sql to_do_db",
+    "db:seed": "psql -f seed.sql to_do_db",
+    "db:reset": "npm run db:destroy; npm run db:create && npm run db:init && npm run db:seed" 
   },
   "keywords": [],
   "author": "",
